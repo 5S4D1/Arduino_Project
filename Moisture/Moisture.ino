@@ -5,13 +5,15 @@
 LiquidCrystal_I2C lcd(0x27,16,2);
 
 int moisture = 0;
-int waterval=0;
+int waterval = 0;
+int motor = 5;
 void setup()
 {
   lcd.init();
   lcd.backlight();
   pinMode(A0, OUTPUT);
   pinMode(A1, INPUT);
+  pinMode(motor, OUTPUT);
   Serial.begin(9600);
   
 }
@@ -41,6 +43,7 @@ void loop()
     } else {
       if (moisture < 600) {
         lcd.print("less then 600");
+        analogWrite(motor, HIGH);
       } else {
         if (moisture < 800) {
           lcd.print("less then 800");
