@@ -13,7 +13,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   lcd.setCursor(0,0);
-  lcd.print("Rayan tore cudi");
+  lcd.print("Hello");
   delay(2000);
   // lcd.clear();
   // lcd.setCursor(0,0);
