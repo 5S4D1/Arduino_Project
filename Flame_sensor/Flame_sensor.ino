@@ -7,11 +7,11 @@ void setup()  {
   Serial.begin(9600);  
 }
 void loop() {
-  // read the sensor on analog A0:
-	int sensorReading  = analogRead(A0);
-  // map the sensor range (four options):
-  // ex: 'long  int map(long int, long int, long int, long int, long int)'
-	int range = map(sensorReading,  sensorMin, sensorMax, 0, 3);
+    // read the sensor on analog A0 for sensor 1:
+	  int sensorReading  = analogRead(A0);
+    // map the sensor range (four options):
+    // ex: 'long  int map(long int, long int, long int, long int, long int)'
+	  int range = map(sensorReading,  sensorMin, sensorMax, 0, 3);
   
   // range value:
   switch (range) {
