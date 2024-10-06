@@ -6,6 +6,7 @@ dht11 DHT11;
 void  setup()
 {
   Serial.begin(9600);
+  pinMode(8,HIGH);
  
 }
 
