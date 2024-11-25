@@ -25,5 +25,5 @@ void loop() {
     Serial.println("No  Fire");
     break;
   }
-  delay(1);  // delay between reads
+  delay(10);  // delay between reads
 }

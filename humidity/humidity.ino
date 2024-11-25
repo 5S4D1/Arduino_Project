@@ -1,12 +1,11 @@
 #include <dht11.h>
-#define DHT11PIN 13
+#define DHT11PIN 2
 
 dht11 DHT11;
 
 void  setup()
 {
   Serial.begin(9600);
-  pinMode(8,HIGH);
  
 }
 

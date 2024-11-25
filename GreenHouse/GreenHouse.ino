@@ -46,7 +46,7 @@ void setup() {
   lcd.setCursor(0, 0);           // Set cursor to first row
   lcd.print("   Monitoring");    // Display "Monitoring"
   lcd.setCursor(0, 1);           // Set cursor to second row
-  lcd.print("     System");       // Display "System"
+  lcd.print("     System");      // Display "System"
   delay(2000);                   // Delay for 2 seconds
   lcd.clear();                   // Clear the screen again after the welcome message
 
@@ -135,4 +135,3 @@ void loop() {
 
   delay(1000); // Short delay before the next loop iteration
 }
-
